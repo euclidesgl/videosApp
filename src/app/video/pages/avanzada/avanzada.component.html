@@ -1,0 +1,118 @@
+<h3>Búsqueda</h3>
+<hr>
+<div class="row">
+    <div class="col-4">
+        <form autocomplete="off">
+            <input  type="text" 
+                    name="nombre"
+                    class="form-control"
+                    placeholder="Buscar nombre..."
+                    [(ngModel)]="nombre" ngDefaultControl
+             /> 
+        </form>
+    </div>
+    <div class="col-4">
+        <form autocomplete="off">
+            <input  type="text" 
+                    name="madre"
+                    class="form-control"
+                    placeholder="Buscar madre..."
+                    [(ngModel)]="madre" ngDefaultControl
+             /> 
+        </form>
+    </div>
+    <div class="col-4">
+        <form autocomplete="off">
+            <input  type="text" 
+                    name="padre"
+                    class="form-control"
+                    placeholder="Buscar padre..."
+                    [(ngModel)]="padre" ngDefaultControl
+             /> 
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <form autocomplete="off">
+            <input  type="text" 
+                    name="rp"
+                    class="form-control"
+                    placeholder="Buscar RP..."
+                    [(ngModel)]="rp" ngDefaultControl
+             /> 
+        </form>
+    </div>
+    <div class="col-4">
+        <form autocomplete="off">
+            <input  type="text" 
+                    name="camada"
+                    class="form-control"
+                    placeholder="Buscar Camada..."
+                    [(ngModel)]="camada" ngDefaultControl
+             /> 
+        </form>
+    </div>
+    <div class="col-4">
+        <form autocomplete="off">
+            <input  type="text" 
+                    name="domador"
+                    class="form-control"
+                    placeholder="Buscar domador..."
+                    [(ngModel)]="domador" ngDefaultControl
+             /> 
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <button (click)="buscar()">
+            Filtrar
+        </button>
+    </div>
+    <div class="col-4">
+        <button (click)="limpiarFiltros()">
+            Limpiar Filtros
+        </button>
+    </div>    
+</div>
+<hr>
+<div class="alert alert-danger">
+    No se encontraron coincidencias para la búsqueda
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th> RP </th>
+                    <th> Nombre </th>
+                    <th> Madre </th>
+                    <th> Padre </th>
+                    <th> Camada </th>
+                    <th> Domador </th>
+                    <th> Video  </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>F5</td>
+                    <td>ATATORI</td>
+                    <td>GEISHA</td>
+                    <td>SIETE ANILLOS</td>
+                    <td>2016</td>
+                    <td>Fran I</td>
+                    <td>
+                        <a href="/video/uno">Ver</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+
